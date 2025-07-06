@@ -1,0 +1,23 @@
+body.theme-dark {
+    /* Level 1 folders (top-level in explorer) */
+    .nav-folder > .nav-folder-title {
+        color: var(--h1-color) !important;
+    }
+    .nav-folder > .nav-folder-title svg {
+        color: var(--h1-color) !important;
+    }
+
+    /* Level 2 folders (children of top-level) */
+    .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {
+        color: var(--h2-color) !important;
+    }
+    .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title svg {
+        color: var(--h2-color) !important;
+    }
+
+    /* Level 3+ (reset to normal) */
+    .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title,
+    .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title svg {
+        color: var(--text-normal) !important;
+    }
+}
